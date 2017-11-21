@@ -1,0 +1,59 @@
+/* RESETS */
+body {
+    padding: 0;
+    margin: 0;
+}
+div, footer {
+    box-sizing: border-box;
+}
+/*END RESETS*/
+
+.personal {
+    height: 400px;
+    width: 100%;
+    border: 2px solid green;
+}
+
+.education {
+    height: 300px;
+    width: 100%;
+    border: 2px solid yellow;
+}
+
+.work-xp {
+    height: 300px;
+    width: 100%;
+    border: 2px solid red;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+@media (min-width: 30em) {
+    .personal {
+        width: 20%;
+        float: left;
+    }
+
+    .education, .work-xp {
+        width: 80%;
+        float: right;
+    }
+
+    /* .education {
+        width: 70%;
+        float: left;
+    }
+
+    .work-xp {
+        width: 70%;
+        float: left;
+    } */
+
+    footer {
+        clear: both;
+    }
+}
