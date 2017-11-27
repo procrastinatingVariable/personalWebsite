@@ -6,18 +6,79 @@ body {
 div, footer {
     box-sizing: border-box;
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
 /*END RESETS*/
 
 .personal {
-    height: 400px;
     width: 100%;
     border: 2px solid green;
 }
+.personal ul {
+    list-style: none;
+}
+
+.portrait {
+    width: inherit;
+    position: relative;
+}
+.portrait img {
+    display: block;
+    width: inherit;
+}
+.portrait p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.contact {
+    width: 100%;
+    border: 2px solid blue;
+}
 
 .education {
-    height: 300px;
+    width: 100%;
+    border: 2px solid cyan;
+}
+
+.languages {
+    width: 100%;
+    border: 2px solid red;
+}
+
+.interests {
+    width: 100%;
+    border: 2px solid lightgreen;
+}
+
+
+
+.skills {
     width: 100%;
     border: 2px solid yellow;
+}
+.skills div {
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+}
+
+.programming {
+
+}
+
+.soft-skills {
+
+}
+
+.tools {
 }
 
 .work-xp {
