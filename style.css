@@ -9,6 +9,7 @@ div, footer {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 p {
     margin: 0;
@@ -20,12 +21,9 @@ p {
     width: 100%;
     border: 2px solid green;
 }
-.personal ul {
-    list-style: none;
-}
 
 .portrait {
-    width: inherit;
+    width: 100%;
     position: relative;
 }
 .portrait img {
@@ -62,16 +60,15 @@ p {
 
 .skills {
     width: 100%;
-    border: 2px solid yellow;
+    border: 2px solid orange;
 }
-.skills div {
-    width: 250px;
-    height: 250px;
+.skills > div {
+    width: 70vw;
+    height: 70vw;
     border: 2px solid blue;
 }
 
 .programming {
-
 }
 
 .soft-skills {
@@ -81,10 +78,12 @@ p {
 .tools {
 }
 
-.work-xp {
-    height: 300px;
+.projects {
     width: 100%;
     border: 2px solid red;
+}
+.projects .item {
+    border: 2px solid green;
 }
 
 footer {
@@ -93,26 +92,27 @@ footer {
     border: 2px solid blue;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 768px) {
     .personal {
         width: 20%;
         float: left;
     }
 
-    .education, .work-xp {
+    .skills, .projects {
         width: 80%;
         float: right;
     }
 
-    /* .education {
-        width: 70%;
-        float: left;
+    .projects {
+        column-count: 2;
+        column-fill: auto;
     }
 
-    .work-xp {
-        width: 70%;
-        float: left;
-    } */
+    .skills > div {
+        width: 25vw;
+        height: 25vw;
+        display: inline-block;
+    }
 
     footer {
         clear: both;
