@@ -1,0 +1,228 @@
+.donut {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+}
+
+.slice {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.blocker {
+    z-index: 9;
+    border-radius: 50%;
+    background-color: inherit;
+    height: 65%;
+    width: 65%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.blocker b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.placer {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: bottom center;
+    width: 10%; 
+    height: 50%;
+    padding-top: 5%;
+}
+
+.placer img {
+    width: 100%;
+    height: auto;
+}
+
+/* languages donut chart */
+.programming .slice:nth-child(1) {
+    z-index: 1;
+    background: #2F4870;
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%);
+}
+.programming .slice:nth-child(2) {
+    z-index: 1;
+    background: #3C5D91;
+    clip-path: polygon(50% 50%, 100% 100%, 0% 100%, 0% 75%);
+}
+.programming .slice:nth-child(3) {
+    z-index: 1;
+    background: #4C76B7;
+    clip-path: polygon(50% 50%, 0% 75%, 0% 0%);
+}
+.programming .slice:nth-child(4) {
+    z-index: 0;
+    background: #5786D1;
+}
+
+.placer-cpp {
+    transform: rotate(67.5deg);
+}
+.placer-cpp img {
+    transform: rotate(-67.5deg);
+}
+
+.placer-c {
+    transform: rotate(185deg);
+}
+.placer-c img {
+    transform: rotate(-185deg);
+}
+
+.placer-python {
+    transform: rotate(280deg);
+}
+.placer-python img {
+    transform: rotate(-280deg);
+}
+
+.placer-java {
+    transform: rotate(340deg);
+}
+.placer-java img {
+    transform: rotate(-340deg);
+}
+
+
+/* soft skills donut chart */
+.soft-skills .slice:nth-child(1) {
+    z-index: 1;
+    background: #2F4870;
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 33.75%);
+}
+.soft-skills .slice:nth-child(2) {
+    z-index: 1;
+    background: #3C5D91;
+    clip-path: polygon(50% 50%, 100% 33.75%, 100% 100%, 86.32% 100%);
+}
+.soft-skills .slice:nth-child(3) {
+    z-index: 1;
+    background: #5786D1;
+    clip-path: polygon(50% 50%, 86.32% 100%, 13.68% 100%);
+}
+.soft-skills .slice:nth-child(4) {
+    z-index: 1;
+    background: #5C8EDE;
+    clip-path: polygon(50% 50%, 13.68% 100%, 0% 100%, 0% 33.75%);
+}
+.soft-skills .slice:nth-child(5) {
+    z-index: 0;
+    background: #4C76B7;
+}
+
+
+.placer-organized {
+    transform: rotate(36deg);
+}
+.placer-organized img {
+    transform: rotate(-36deg);
+}
+
+.placer-empathetic {
+    transform: rotate(108deg);
+}
+.placer-empathetic img {
+    transform: rotate(-108deg);
+}
+
+.placer-listener {
+    transform: rotate(180deg);
+}
+.placer-listener img {
+    transform: rotate(-180deg);
+}
+
+.placer-analytic {
+    transform: rotate(252deg);
+}
+.placer-analytic img {
+    transform: rotate(-252deg);
+}
+
+.placer-box {
+    transform: rotate(324deg);
+}
+.placer-box img {
+    transform: rotate(-324deg);
+}
+
+
+/* tools donut chart */
+.tools .slice:nth-child(1) {
+    z-index: 1;
+    background: #2F4870;
+    clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 44%);
+}
+.tools .slice:nth-child(2) {
+    z-index: 1;
+    background: #3C5D91;
+    clip-path: polygon(50% 50%, 100% 44%, 100% 100%, 30% 100%);
+}
+.tools .slice:nth-child(3) {
+    z-index: 1;
+    background: #5786D1;
+    clip-path: polygon(50% 50%, 30% 100%, 0% 100%, 0% 50%);
+}
+.tools .slice:nth-child(4) {
+    z-index: 2;
+    background: #5C8EDE;
+    clip-path: polygon(50% 50%, 0% 50%, 0% 0%, 5% 0%);
+}
+.tools .slice:nth-child(5) {
+    z-index: 0;
+    background: #4C76B7;
+}
+
+
+.placer-linux {
+    transform: rotate(45deg);
+}
+.placer-linux img {
+    transform: rotate(-45deg);
+}
+
+.placer-console {
+    transform: rotate(140deg);
+}
+.placer-console img {
+    transform: rotate(-140deg);
+}
+
+.placer-vim {
+    transform: rotate(230deg);
+}
+.placer-vim img {
+    transform: rotate(-230deg);
+}
+
+.placer-arduino {
+    transform: rotate(293deg);
+}
+.placer-arduino img {
+    transform: rotate(-293deg);
+}
+
+.placer-android {
+    transform: rotate(338deg);
+}
+.placer-android img {
+    transform: rotate(-338deg);
+}

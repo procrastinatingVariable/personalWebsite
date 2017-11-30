@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="donut-chart.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link href="css/donut-chart.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +17,8 @@
 <body>
     <div class="personal">
         <div class="portrait">
-            <img src="https://www.w3schools.com/w3images/avatar_hat.jpg">
-            <p>Ştefan Gabriel</p>
+            <img src="icons/avatar.jpg" alt="avatar">
+            <p><b>Ştefan Gabriel</b></p>
         </div>
 
         <div class="contact">
@@ -37,102 +41,148 @@
                 </li>
                 <li>
                     <i class="fa fa-github fa-fw"></i>
-                    <a href="github.com/procrastinatingVariable">GitHub</a>
+                    <a href="http://www.github.com/procrastinatingVariable">GitHub</a>
                 </li>
             </ul>
+            <hr>
         </div>
         
         <div class="education">
-            <i class="fa fa-graduation-cap fa-2x fa-fw">Education</i>
+            <i class="fa fa-graduation-cap fa-lg fa-fw"></i>
+            <b>Education</b>
             <ul>
                 <li>Faculty of Mathematics and Computer Science, University of Bucharest</li>
             </ul>
         </div>
 
         <div class="languages">
-            <i class="fa fa-globe fa-2x fa-fw">Languages</i>
+            <i class="fa fa-globe fa-lg fa-fw"></i>
+            <b>Languages</b>
             <ul>
-                <li>Romanian (mother-tongue)</li>
-                <li>English (proeficient)</li>
+                <li>Romanian <span>(mother-tongue)</span></li>
+                <li>English <span>(proeficient)</span></li>
             </ul>
         </div>
 
         <div class="interests">
-            <i class="fa fa-gamepad fa-2x fa-fw">Interests</i>
+            <i class="fa fa-gamepad fa-lg fa-fw"></i>
+            <b>Interests</b>
             <p>Reading, Gaming, Learning, Self-improvement, Science, Technology, Stuff</p>
         </div>
     </div>
 
     <div class="skills">
-        <div class="programming">
-            <div class="donut">
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="blocker"></div>
+        <i class="fa fa-bullseye fa-lg fa-fw"></i>
+        <b>Skills</b>
+        <div class="diagrams">
+            <div class="programming">
+                <div class="donut">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="blocker">
+                        <b>Languages</b>
+                    </div>
 
-                <div class="placer placer-cpp">
-                    <img src="./icons/programming-cpp.png">
-                </div>
-                <div class="placer placer-c">
-                    <img src="./icons/programming-c.png">
-                </div>
-                <div class="placer placer-python">
-                    <img src="./icons/programming-python.png">
-                </div>
-                <div class="placer placer-java">
-                    <img src="./icons/programming-java.png">
+                    <div class="placer placer-cpp">
+                        <img src="./icons/programming-cpp.png" width="40" height="40" alt="cpp icon">
+                    </div>
+                    <div class="placer placer-c">
+                        <img src="./icons/programming-c.png" width="40" height="40" alt="c icon">
+                    </div>
+                    <div class="placer placer-python">
+                        <img src="./icons/programming-python.png" width="40" height="40" alt="python icon">
+                    </div>
+                    <div class="placer placer-java">
+                        <img src="./icons/programming-java.png" width="40" height="40" alt="java icon">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="soft-skills">
-            <div class="donut">
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="slice"></div>
-                <div class="blocker"></div>
-            </div>
-        </div>
-        <div class="tools">
-            <div class="donut">
+            <div class="soft-skills">
+                <div class="donut">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="blocker">
+                        <b>Soft-skills</b>
+                    </div>
 
+                    <div class="placer placer-organized">
+                        <img src="./icons/sskills-organized.png" width="40" height="40" alt="boxes icon">
+                    </div>
+                    <div class="placer placer-empathetic">
+                        <img src="./icons/sskills-empathetic.png" width="40" height="40" alt="friends icon">
+                    </div>
+                    <div class="placer placer-listener">
+                        <img src="./icons/sskills-listening.png" width="40" height="40" alt="ear icon">
+                    </div>
+                    <div class="placer placer-analytic">
+                        <img src="./icons/sskills-analytic.png" width="40" height="40" alt="mindmap icon">
+                    </div>
+                    <div class="placer placer-box">
+                        <img src="./icons/sskills-box.png" width="40" height="40" alt="box icon">
+                    </div>
+                </div>
+            </div>
+            <div class="tools">
+                <div class="donut">
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="slice"></div>
+                    <div class="blocker">
+                        <b>Tools</b>
+                    </div>
+
+                    <div class="placer placer-linux">
+                        <img src="./icons/tools-linux.png" width="40" height="40" alt="linux icon">
+                    </div>
+                    <div class="placer placer-console">
+                        <img src="./icons/tools-console.png" width="40" height="40" alt="console icon">
+                    </div>
+                    <div class="placer placer-vim">
+                        <img src="./icons/tools-vim.png" width="40" height="40" alt="atom icon">
+                    </div>
+                    <div class="placer placer-arduino">
+                        <img src="./icons/tools-arduino.png" width="40" height="40" alt="arduino icon">
+                    </div>
+                    <div class="placer placer-android">
+                        <img src="./icons/tools-android.png" width="40" height="40" alt="android icon">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="projects">
-        <div class="item">
-            <dt>Project 1</dt>
-            <dd>description for project1</dd>
-        </div>
-        <div class="item">
-            <dt>Project 2</dt>
-            <dd>description for project2</dd>
-        </div>
-        <div class="item">
-            <dt>Project 3</dt>
-            <dd>description for project3</dd>
-        </div>
-        <div class="item">
-            <dt>Project 4</dt>
-            <dd>description for project4</dd>
-        </div>
-        <div class="item">
-            <dt>Project 5</dt>
-            <dd>description for project5</dd>
-        </div>
-        <div class="item">
-            <dt>Project 6</dt>
-            <dd>description for project6</dd>
-        </div>
-        <div class="item">
-            <dt>Project 6</dt>
-            <dd>description for project6</dd>
-        </div>
+        <i class="fa fa-cogs fa-lg fa-fw"></i>
+        <b>Projects</b>
+        <div>
+            <dl>
+                <dt>Connect Four (C)</dt>
+                <dd>Connect four game made using C and ncurses library</dd>
+            </dl>
+            <dl>
+                <dt>Arduino Game (C++)</dt>
+                <dd>8x8 LED matrix Arduino Game</dd>
+            </dl>
+            <dl>
+                <dt>Various AI projects (Python)</dt>
+                <dd>AI projects involving Computer Vision and Image Processing</dd>
+            </dl>
+            <dl>
+                <dt>Asteroids Game Clone (C++, OpenGL)</dt>
+                <dd>Asteroids clone written in C++ using OpenGL</dd>
+            </dl>
+            <dl>
+                <dt>This website (HTML5, CSS3)</dt>
+                <dd>Personal website written in HTML5 and CSS3 (no other libraries or frameworks)</dd>
+            </dl>
+        </div> 
     </div>
 
-    <footer></footer>
 </body>
 </html>

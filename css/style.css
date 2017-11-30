@@ -1,0 +1,43 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f1f1f1;
+}
+
+body > div {
+    box-shadow: 3px 0px 20px -5px; 
+}
+
+body > * {
+    background-color: white;
+}
+
+i {
+    color: rgb(87, 134, 209);
+}
+
+b {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.blocker b {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+dt {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+dd {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(107, 166, 255);
+}

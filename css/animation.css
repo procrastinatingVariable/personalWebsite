@@ -1,0 +1,47 @@
+/* .skills, .projects {
+    transform: translateX(66.6vw);
+}
+
+.personal {
+    transform: translateX(-33.3vw);
+} */
+body > div {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein-right {
+    from {
+        transform: translateX(66.6vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidein-left {
+    from {
+        transform: translateX(-33.3vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .personal {
+        animation-name: slidein-left;
+    }
+    .skills, .projects {
+        animation-name: slidein-right;
+    }
+}
